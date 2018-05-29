@@ -1,0 +1,509 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  outline: none;
+  font-family: 'Yu Mincho';
+}
+
+main {
+  min-height: 800px;
+  padding: 50px 100px;
+  clear: both;
+}
+
+a {
+  margin-right: 30px;
+  text-decoration: none;
+}
+
+header a {
+  color: #fff;
+}
+
+header a:hover {
+  color: #eee;
+}
+
+header {
+  background: skyblue;
+  height: 50px;
+  font-size: 1.5em;
+  line-height: 50px;
+  text-align: center;
+}
+
+#header_div_right {
+  float: right;
+  margin-right: 100px;
+}
+
+#home {
+  float: left;
+  margin-left: 200px;
+}
+
+footer {
+  text-align: center;
+  background: silver;
+  color: #fff;
+  font-size: 1.2em;
+  width: 100%;
+}
+
+footer > p {
+  margin: auto;
+  line-height: 50px;
+}
+
+.search_button {
+  background: #fff;
+}
+
+.product_search {
+  width: 500px;;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+
+.product_price_search {
+  width: 100px;
+  border-radius: 5px;
+}
+
+button {
+  border-radius: 5px;
+  padding: 0 5px;
+  cursor: pointer;
+  border: none;
+}
+
+input[type="text"], select, input[type="password"] {
+  border-radius: 5px;
+}
+
+#products {
+  overflow: auto;
+  width: 800px;
+  margin: 50px auto;
+}
+
+#products .product_img {
+  float: left;
+  background: silver;
+  color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+}
+
+#products a:hover {
+  opacity: 0.8;
+}
+
+#products .product_info {
+  float: right;
+  width: 80%;
+}
+
+#products > li {
+  list-style-type: none;
+  width: 800px;
+  height: 200px;
+  padding-bottom: 20px;
+  margin-bottom: 25px;
+}
+
+#products > li:not(:last-child) {
+  border-bottom: 1px solid rgba(200, 200, 200, 0.5);
+}
+
+#login_form {
+  width: 300px;
+  margin: 10px auto;
+}
+
+input[type="text"], input[type="password"] {
+  padding-left: 5px;
+}
+
+input[type="date"] {
+  padding-left: 5px;
+  border-radius: 5px;
+  width: 295px;
+}
+
+input[name="password"] {
+  margin-bottom: 35px;
+}
+
+input[name="passwordConfirm"] {
+  margin-bottom: 35px;
+}
+
+input[name="name"] {
+  margin-bottom: 20px;
+}
+
+input[name="birthDate"] {
+  margin-bottom: 20px;
+}
+
+input[name="loginId"] {
+  margin-bottom: 20px;
+}
+
+#login_form .letter {
+  font-size: 12px;
+}
+
+#login_button {
+  height: 35px;
+  background: #00aaff;
+  color: #fff;
+  border-radius: 5px;
+  width: 300px;
+  line-height: 35px;
+}
+
+#login_button:hover {
+  opacity: 0.8;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+}
+
+#empty_cart, #buy {
+  width: 200px;
+  padding: 5px;
+  color: #fff;
+  background: #00aaff;
+  text-align: center;
+  border-radius: 5px;
+  margin: 0 auto;
+  display: inline-block;
+}
+
+#empty_cart:hover, #buy:hover {
+  opacity: 0.7;
+}
+
+.cart_product .product_img {
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  line-height: 200px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: silver;
+  color: #fff;
+  display: inline-block;
+}
+
+.cart_product .product_img:hover {
+  opacity: 0.5;
+}
+
+.cart_product {
+  width: 200px;
+  text-align: center;
+  display: inline-block;
+}
+
+.cart_product + .cart_product {
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
+.cart_product:nth-child(4n+1) {
+  margin-left: 0;
+}
+
+#cart_contents {
+  width: 920px;
+  margin: 30px auto;
+}
+
+#cart_status, h1 {
+  text-align: center;
+}
+
+h1 {
+  font-size: 1.5em;
+}
+
+.delete_btn {
+  padding: 0 10px;
+  color: #fff;
+  border-radius: 5px;
+  background: red;
+  line-height: 1.3em;
+  text-align: center;
+}
+
+.delete_btn:hover {
+  opacity: 0.5;
+}
+
+.cart_product_detail {
+  width: 900px;
+  margin: 50px auto;
+}
+
+.cart_product_detail .product_img {
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  line-height: 200px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: silver;
+  color: #fff;
+  display: inline-block;
+}
+
+.cart_product_detail .product_info {
+  width: 650px;
+  float: right;
+}
+
+.add_product {
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  line-height: 200px;
+  background: silver;
+  color: #fff;
+  border-radius: 5px;
+  margin: 30px auto 10px;
+}
+
+.add_btn {
+  color: #fff;
+  width: 100px;
+  background: #00aaff;
+  border-radius: 5px;
+  padding: 3px 10px;
+}
+
+.add_btn:hover {
+  opacity: 0.7;
+}
+
+#add_form {
+  width: 300px;
+  margin: 30px auto;
+  text-align: center;
+}
+
+#add_product_info > p {
+  text-align: center;
+}
+
+#purchase_history th, #purchase_history td {
+  width: 300px;
+  text-align: center;
+  padding: 10px;
+}
+
+#purchase_history td > a {
+  margin: 0 auto;
+  color: #00aaff;
+}
+
+#purchase_history td > a:hover {
+  opacity: 0.5;
+}
+
+#purchase_history {
+  width: 900px;
+  margin: 50px auto;
+  background: #f5f5f5;
+  border-collapse: collapse;
+  box-shadow: 1px 3px 1px silver;
+}
+
+#purchase_history tr:not(:last-child) {
+  border-bottom: 2px solid silver;
+}
+
+h1 {
+  font-weight: normal;
+}
+
+#user_info {
+  width: 900px;
+  margin: 50px auto;
+  background: #f5f5f5;
+  border-collapse: collapse;
+  box-shadow: 1px 3px 1px silver;
+}
+
+#user_info th, #user_info td {
+  width: 300px;
+  text-align: center;
+  padding: 10px;
+}
+
+#user_info tr:not(:last-child) {
+  border-bottom: 2px solid silver;
+}
+
+#user_info td a {
+  padding-left: 18px;
+}
+
+#user_info_update_btn {
+  height: 35px;
+  background: #00aaff;
+  color: #fff;
+  border-radius: 5px;
+  width: 300px;
+  line-height: 35px;
+}
+
+#user_info_update_btn:hover {
+  color: #eee;
+}
+
+#product_review > div {
+  width: 200px;
+  height: 200px;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 200px;
+  background: silver;
+  color: #fff;
+  margin: 50px auto;
+}
+
+#product_review {
+  text-align: center;
+}
+
+#product_review button {
+  display: block;
+  width: 100px;
+  margin: 0 auto;
+  background: #00aaff;
+  color: #fff;
+}
+
+#product_review textarea {
+  height: 100px;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+#rating {
+  margin-bottom: 20px;
+}
+
+#buy_confirm {
+  width: 1200px;
+  margin: 50px auto;
+  background: #f5f5f5;
+  border-collapse: collapse;
+  box-shadow: 1px 3px 1px silver;
+}
+
+#buy_confirm td, #buy_confirm th {
+  text-align: center;
+  padding: 10px;
+}
+
+#buy_confirm tr:not(:last-child) {
+  border-bottom: 2px solid silver;
+}
+
+#buy_btn {
+  width: 200px;
+  padding: 5px;
+  margin: 0 auto;
+  border-radius: 5px;
+  color: #fff;
+  background: #00aaff;
+  text-align: center;
+}
+
+#buy_btn:hover {
+  opacity: 0.5;
+}
+
+#buy_result {
+  width: 600px;
+  margin: 50px auto;
+}
+
+#buy_result div {
+  width: 250px;
+  color: #fff;
+  background: #00aaff;
+  text-align: center;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 2px 4px 2px #0088bb;
+  display: inline-block;
+}
+
+#buy_result div:hover {
+  opacity: 0.7;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance:textfield;
+}
+
+
+.review_item {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.others_buy_item {
+  width: 200px;
+  height: 200px;
+  background: silver;
+  border-radius: 5px;
+  color: #fff;
+  text-align: center;
+  line-height: 200px;
+}
+
+li {
+  list-style-type: none;
+}
+
+#others_buy li {
+  display: inline-block;
+  width: 200px;
+}
+
+#others_buy li + #others_buy li {
+  margin-left: 15px;
+}
+
+#others_buy li:nth-child(4n+1) {
+  margin-left: 0;
+}
+
+.cart_con {
+	background: #00aaff;
+	padding:10px;
+	border-radius:5px;
+	text-align:center;
+}
